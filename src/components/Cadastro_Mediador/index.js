@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Form, Button} from 'react-bootstrap'
 import { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 
 import './Cad_Mediador.css'
 
@@ -14,6 +15,8 @@ function CadastroMediador() {
     })
 
     const [result, setResult] = useState('')
+
+    const history = useHistory();
 
     function handleChange({target}) {
         const {id, value} = target
@@ -33,6 +36,8 @@ function CadastroMediador() {
         }).then(res => {
             setResult(res)
         })
+
+        history.push('/gerenciar')
     }
 
     return(

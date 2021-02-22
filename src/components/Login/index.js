@@ -19,7 +19,7 @@ function Login() {
                             <Form.Label htmlFor="senha">Senha</Form.Label>
                             <Form.Control type="password" placeholder="Senha" id="senha" />
                             <br></br><p>Se você já é um mediador faça login, ou então </p>
-                            <p><a href="/cadastro" to="/cadastro">Cadastre-se</a></p>
+                            <p><a href="/cadastro-mediador" to="/cadastro-mediador">Cadastre-se</a></p>
                         </Form.Group>
                     </div>
                     <Button className="button-enviar" type="submit">
